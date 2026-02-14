@@ -1,0 +1,38 @@
+.modal-dialog {
+  margin: 4rem auto;
+  max-width: 45rem;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  .modal-content{
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #fff;
+  }
+  .close{
+    margin: 1rem;
+    color: #fff;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  .modal-header{
+    padding-right: 2rem;
+    z-index: 1;
+    color: #ffff;
+    font-size: 4rem;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  .modal-body{
+    padding: 1rem 1rem 0 1rem;
+    h2, h1, h3, h4, h5, h6{ color: #fff; text-align: center; }
+    p{ color: #fff; }
+    img{ width: 100%; }
+  }
+}

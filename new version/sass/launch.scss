@@ -1,0 +1,70 @@
+.launch{
+  background-color: #f4f2eb;
+  padding: 3rem 15px;
+  p{
+    font-style: normal;
+  }
+  .btn{
+      border-color: #000;
+      color: #000;
+      &:hover{
+        border-color: #fecb1c;
+      }
+  }
+  .studio-box {
+      position: relative;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 8px 8px 0 0;
+      padding: 24px 0 0 0;
+      box-shadow: 0 0 28px rgba(30,30,30,.2);
+      a.link{ display: block; }
+      &::after {
+        content: "···";
+        font-weight: 700;
+        color: rgb(229, 229, 229);
+        position: absolute;
+        line-height: 1;
+        top: -4px;
+        left: 12px;
+        font-size: 32px;
+      }
+    .studio-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        filter: alpha(opacity = 0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 24px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        overflow: hidden;
+        background: #fecb1c;
+        .link-small{ color: #000; text-decoration: underline; }
+
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
+    }
+    &:hover{
+      .studio-action{
+        opacity: .8;
+
+        -webkit-transition: all 300ms ease-in;
+        -moz-transition: all 300ms ease-in;
+        -ms-transition: all 300ms ease-in;
+        transition: all 300ms ease-in;
+      }
+    }
+  }
+  .studio-box img {
+      display: block;
+      width: 100%;
+  }
+}
