@@ -29,6 +29,19 @@
      });
    });
 
+   // Gallery modal - show clicked project image
+   $(document).ready(function(){
+     $('.works__gallery').on('click', function(e){
+       e.preventDefault();
+       var imgSrc = $(this).find('img').attr('src');
+       var title = $(this).data('title') || '';
+       var caption = $(this).data('caption') || '';
+       $('#modalImage').attr('src', imgSrc);
+       $('#modalCaption').html('<h4>' + title + '</h4><p>' + caption + '</p>');
+       $('.ModalGallery').modal('show');
+     });
+   });
+
    //SCROLL
    $(document).ready(function(){
      document.querySelectorAll('a[href^="#"]').forEach(anchor => {

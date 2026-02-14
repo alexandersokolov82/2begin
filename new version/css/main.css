@@ -25071,9 +25071,16 @@ header .phone a {
   padding: 0.4rem 0.8rem;
 }
 
+header .logo img {
+  position: relative;
+  top: -2px;
+}
+
 /* line 369, ../sass/main.scss */
 .hero-home {
-  background-image: url("https://via.placeholder.com/1334");
+  background-image: url("../images/projects/piano.jpg");
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 /* line 373, ../sass/main.scss */
@@ -25198,9 +25205,14 @@ header .phone a {
   }
 }
 /* line 463, ../sass/main.scss */
+.works .works--done {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 .works .works__gallery {
   position: relative;
-  margin: 0.3rem .5rem;
+  cursor: pointer;
 }
 /* line 466, ../sass/main.scss */
 .works .works__gallery figcaption::before {
@@ -25225,6 +25237,8 @@ header .phone a {
 .works .works__gallery img {
   border-radius: 50%;
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 /* line 488, ../sass/main.scss */
 .works .works__gallery p {
@@ -25354,7 +25368,9 @@ header .phone a {
 
 /* line 598, ../sass/main.scss */
 .about {
-  background-image: url("https://via.placeholder.com/1334");
+  background-image: url("../images/projects/chase.jpg");
+  background-size: cover;
+  background-position: center;
   position: relative;
   padding-top: 15rem;
   padding-bottom: 18rem;
